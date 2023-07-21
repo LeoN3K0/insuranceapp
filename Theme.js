@@ -1,18 +1,37 @@
-const colors = {
-    primaryPurple: '#6A0DAD', // Dark purple color for primary elements
-    background: '#1E1E1E', // Dark background color
-    text: '#FFFFFF', // White text color
-    secondaryText: '#A1A1A1', // Lighter text color for secondary elements
-  };
-  
-  const fonts = {
-    regular: 'Helvetica', // Add your desired font here for regular text
-    bold: 'Helvetica-Bold', // Add your desired font here for bold text
-  };
-  
-  const theme = {
-    colors,
-    fonts,
-  };
-  
-  export default theme;
+import { MD3DarkTheme, MD3LightTheme as DefaultTheme } from 'react-native-paper';
+
+const purpleColor = '#9c27b0';
+const lightPurpleColor = '#ce93d8';
+const darkPurpleColor = '#6a1b9a';
+
+// Light theme
+const lightTheme = {
+  ...DefaultTheme,
+  roundness: 4,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: purpleColor,
+    accent: lightPurpleColor,
+    background: '#ffffff',
+    surface: '#ffffff',
+    text: '#000000',
+    secondary: lightPurpleColor,
+  },
+};
+
+// Dark theme
+const darkTheme = {
+  ...MD3DarkTheme,
+  roundness: 4,
+  colors: {
+    ...MD3DarkTheme.colors,
+    primary: purpleColor,
+    accent: darkPurpleColor,
+    background: '#121212',
+    surface: '#121212',
+    text: '#ffffff',
+    secondary: darkPurpleColor,
+  },
+};
+
+export { lightTheme, darkTheme };
