@@ -1,8 +1,8 @@
 import { MD3DarkTheme, MD3LightTheme as DefaultTheme } from 'react-native-paper';
 
-const purpleColor = '#9c27b0';
-const lightPurpleColor = '#ce93d8';
-const darkPurpleColor = '#6a1b9a';
+const blueColor = '#2196F3';
+const lightBlueColor = '#64B5F6';
+const darkBlueColor = '#1565C0';
 
 // Light theme
 const lightTheme = {
@@ -10,12 +10,13 @@ const lightTheme = {
   roundness: 4,
   colors: {
     ...DefaultTheme.colors,
-    primary: purpleColor,
-    accent: lightPurpleColor,
-    background: '#ffffff',
+    primary: blueColor,
+    accent: lightBlueColor,
+    background: '#E3F2FD',
     surface: '#ffffff',
     text: '#000000',
-    secondary: lightPurpleColor,
+    secondary: lightBlueColor,
+    navBackground: '#ffffff',
   },
 };
 
@@ -25,12 +26,13 @@ const darkTheme = {
   roundness: 4,
   colors: {
     ...MD3DarkTheme.colors,
-    primary: purpleColor,
-    accent: darkPurpleColor,
-    background: '#121212',
+    primary: blueColor,
+    accent: darkBlueColor,
+    background: '#0D47A1',
     surface: '#121212',
     text: '#ffffff',
-    secondary: darkPurpleColor,
+    secondary: darkBlueColor,
+    navBackground: '#424242',
   },
 };
 
