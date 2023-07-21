@@ -50,7 +50,7 @@ function Nav() {
         component={SupportScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="chat-processing-outline" size={24} color={color} />
+            <MaterialCommunityIcons name="message-processing-outline" size={24} color={color} />
           ),
         }}
       />
