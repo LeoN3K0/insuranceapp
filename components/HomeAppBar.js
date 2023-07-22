@@ -71,13 +71,15 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   scrollViewContent: {
-    flexDirection: 'row', // Set the horizontal scroll direction for the ScrollView
+    flexDirection: 'row', 
   },
   card: {
     marginRight: 8,
+    marginBottom: 10,
     borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    width: 150,
   },
 });
 
