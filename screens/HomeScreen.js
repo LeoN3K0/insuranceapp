@@ -1,13 +1,14 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { useTheme } from 'react-native-paper'; // Import useTheme hook
+import { View, StyleSheet } from 'react-native';
+import { useTheme } from 'react-native-paper';
+import HomeAppbar from '../components/HomeAppBar';
 
 function HomeScreen() {
-  const theme = useTheme(); // Use the theme
+  const theme = useTheme();
 
   return (
     <View style={[styles.container, { backgroundColor: theme.colors.background }]}>
-      <Text style={{ color: theme.colors.text }}>HomeScreen Content</Text>
+      <HomeAppbar/>
     </View>
   );
 }
@@ -15,9 +16,9 @@ function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 16,
+  },
+  card: {
+    margin: 16,
   },
 });
 
