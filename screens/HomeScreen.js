@@ -2,13 +2,18 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { useTheme } from 'react-native-paper';
 import HomeAppbar from '../components/HomeAppBar';
+import ActivePolicies from '../components/ActivePolicies';
+import { ScrollView } from 'react-native';
 
 function HomeScreen() {
   const theme = useTheme();
 
   return (
     <View style={[styles.container, { backgroundColor: theme.colors.background }]}>
-      <HomeAppbar/>
+      <ScrollView vertical>
+        <HomeAppbar/>
+        <ActivePolicies/>
+      </ScrollView>
     </View>
   );
 }
