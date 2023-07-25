@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import { useTheme } from 'react-native-paper';
 import HomeAppbar from '../components/HomeAppBar';
 import ActivePolicies from '../components/ActivePolicies';
+import InsuranceCoverage from '../components/InsuranceCoverage';
 import { ScrollView } from 'react-native';
 
 function HomeScreen() {
@@ -13,6 +14,7 @@ function HomeScreen() {
       <ScrollView vertical>
         <HomeAppbar/>
         <ActivePolicies/>
+        <InsuranceCoverage/>
       </ScrollView>
     </View>
   );
