@@ -7,6 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Nav from './components/Nav';
 
+
 export default function App() {
   const theme = useTheme();
   const deviceColorScheme = useColorScheme();
@@ -15,8 +16,8 @@ export default function App() {
   return (
     <PaperProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <NavigationContainer>
-        <StatusBar style={isDarkTheme ? 'light' : 'dark'} backgroundColor={isDarkTheme ? darkTheme.colors.navBackground : lightTheme.colors.navBackground} />   
-        <Nav />        
+        <StatusBar style={isDarkTheme ? 'light' : 'dark'} backgroundColor={isDarkTheme ? darkTheme.colors.navBackground : lightTheme.colors.navBackground} /> 
+        <Nav />              
       </NavigationContainer>
     </PaperProvider>
   );

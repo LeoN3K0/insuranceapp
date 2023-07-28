@@ -1,9 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { Appbar, Badge, Card, useTheme } from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
 
 const HomeAppBar = () => {
   const theme = useTheme();
+  const navigation = useNavigation();
 
   return (
     <View>
@@ -20,7 +22,7 @@ const HomeAppBar = () => {
         </View>
 
         <ScrollView horizontal contentContainerStyle={styles.scrollViewContent}>
-          <Card style={styles.card}>
+          <Card style={styles.card} onPress={() => navigation.navigate('Map')}>
             <Card.Content>
               <View style={styles.cardContainerDate}>
                 <Text style={{ color: 'gray', marginRight: 40 }}>Today, 05:00 a.m</Text>
