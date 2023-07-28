@@ -1,13 +1,18 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { useTheme } from 'react-native-paper'; // Import useTheme hook
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { useTheme } from 'react-native-paper'; 
+import ScoreAppBar from '../components/ScoreAppBar';
+import DrivingMetrics from '../components/DrivingMetrics';
 
 function ScoreScreen() {
-  const theme = useTheme(); // Use the theme
+  const theme = useTheme();
 
   return (
     <View style={[styles.container, { backgroundColor: theme.colors.background }]}>
-      <Text style={{ color: theme.colors.text }}>ScoreScreen Content</Text>
+      <ScrollView vertical>
+        <ScoreAppBar/>
+        <DrivingMetrics/>
+      </ScrollView>
     </View>
   );
 }
@@ -15,9 +20,9 @@ function ScoreScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 16,
+  },
+  card: {
+    margin: 16,
   },
 });
 
