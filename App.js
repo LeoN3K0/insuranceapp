@@ -4,8 +4,9 @@ import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'react-native';
 import { lightTheme, darkTheme } from './Theme';
 import { NavigationContainer } from '@react-navigation/native';
+import StackNav from './components/StackNav';
 
-import Nav from './components/Nav';
+
 
 
 export default function App() {
@@ -17,7 +18,7 @@ export default function App() {
     <PaperProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <NavigationContainer>
         <StatusBar style={isDarkTheme ? 'light' : 'dark'} backgroundColor={isDarkTheme ? darkTheme.colors.navBackground : lightTheme.colors.navBackground} /> 
-        <Nav />              
+          <StackNav />          
       </NavigationContainer>
     </PaperProvider>
   );

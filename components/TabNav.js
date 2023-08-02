@@ -11,7 +11,7 @@ import ProfileScreen from '../screens/ProfileScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 
-function Nav() {
+function TabNav() {
   const theme = useTheme();
 
   return (
@@ -21,7 +21,7 @@ function Nav() {
       inactiveColor={theme.colors.text}
     >
       <Tab.Screen
-        name="Home"
+        name="MainHome"
         component={HomeScreen}
         options={{
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="home" size={24} color={color} />,
@@ -67,4 +67,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default TabNav;
