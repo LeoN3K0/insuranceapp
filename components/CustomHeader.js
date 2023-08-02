@@ -1,20 +1,24 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Appbar, IconButton, Text } from 'react-native-paper';
+import { Card, IconButton, Text, useTheme } from 'react-native-paper';
 
 const CustomHeader = ({ navigation, title }) => {
+  const theme = useTheme();
   return (
     <View style={styles.headerContainer}>
       <View style={styles.backButtonContainer}>
         <IconButton
           icon="arrow-left"
-          color="white"
+          mode="contained"
+          containerColor={theme.colors.surface}
           size={24}
           onPress={() => navigation.goBack()}
         />
       </View>
       <View style={styles.titleContainer}>
+        <Card style={{marginRight: 50, borderRadius: 20}}>
         <Text style={styles.titleText}>{title}</Text>
+        </Card>
       </View>
     </View>
   );
@@ -32,22 +36,16 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent', 
   },
   backButtonContainer: {
-    borderRadius: 30,
     marginLeft: 8,
-    backgroundColor: 'white'
   },
   titleContainer: {
     flex: 1,
     alignItems: 'center',
   },
   titleText: {
-    color: 'black',
     fontSize: 18,
-    backgroundColor: 'white',
     paddingVertical: 4,
     paddingHorizontal: 8,
-    borderRadius: 20,
-    marginRight: 75,
   },
 });
 

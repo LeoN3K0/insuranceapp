@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
 import { View, StyleSheet } from 'react-native';
-import { Card, Text, useTheme, Avatar, IconButton } from 'react-native-paper';
+import { Card, Text, useTheme, Avatar} from 'react-native-paper';
 
 const DrivingMetrics = () => {
   const theme = useTheme();
@@ -16,7 +16,7 @@ const DrivingMetrics = () => {
                 <Card style={styles.metricCard}>
                     <Card.Content>
                         <View style={styles.metricRow}>
-                            <Avatar.Icon style={{marginRight: 20, marginTop: 5, backgroundColor: theme.colors.primary}} icon='speedometer' size={35} />
+                            <Avatar.Icon style={{marginRight: 20, marginTop: 5}} icon='speedometer' size={35} />
                             <View style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 5, marginRight: 50 }}>
                                 <Text>Speed</Text>
                                 <Text>Excellent</Text>
@@ -38,7 +38,7 @@ const DrivingMetrics = () => {
                 <Card style={styles.metricCard}>
                     <Card.Content>
                         <View style={styles.metricRow}>
-                            <Avatar.Icon style={{marginRight: 20, marginTop: 5, backgroundColor: theme.colors.primary}} icon='alert-octagon' size={35} />
+                            <Avatar.Icon style={{marginRight: 20, marginTop: 5}} icon='alert-octagon' size={35} />
                             <View style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 5, marginRight: 50 }}>
                                 <Text>Braking</Text>
                                 <Text>Good</Text>

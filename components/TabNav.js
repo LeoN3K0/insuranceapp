@@ -16,9 +16,7 @@ function TabNav() {
 
   return (
     <Tab.Navigator
-      barStyle={{ backgroundColor: theme.colors.navBackground}}
-      activeColor={theme.colors.primary}
-      inactiveColor={theme.colors.text}
+      activeColor={theme.colors.primary}  
     >
       <Tab.Screen
         name="MainHome"

@@ -30,17 +30,17 @@ const InfoCard = ({ duration, distance, addressA, addressB }) => {
             <Card.Content>
             <View style={styles.addressContainer}>
             <View style={styles.cardContainer}>
-            <Avatar.Icon icon={'circle'} style={{ backgroundColor: 'blue', marginRight: 10, marginVertical: 5}} size={15}/>
+            <Avatar.Icon icon={'circle'} style={{ backgroundColor: theme.colors.secondary, marginRight: 10, marginVertical: 5}} size={15}/>
             <Text>{addressA}</Text>
             </View>
             <View style={{flexDirection: 'column', justifyContent: 'space-evenly', alignContent: 'flex-start',}}>
-            <Badge style={{ backgroundColor: 'blue', marginLeft: 2, marginVertical: 2.5, }} size={3}/>
-            <Badge style={{ backgroundColor: 'blue', marginLeft: 2, marginVertical: 2.5, }} size={3}/>
-            <Badge style={{ backgroundColor: 'blue', marginLeft: 2, marginVertical: 2.5, }} size={3}/>
-            <Badge style={{ backgroundColor: 'blue', marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
             </View>
             <View style={styles.cardContainer}>
-            <Avatar.Icon icon={'circle'} style={{ backgroundColor: 'blue', marginRight: 10, marginVertical: 5 }} size={15}/>
+            <Avatar.Icon icon={'circle'} style={{ backgroundColor: theme.colors.secondary, marginRight: 10, marginVertical: 5 }} size={15}/>
             <Text>{addressB}</Text>
             </View>
             </View>

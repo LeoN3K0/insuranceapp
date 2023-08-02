@@ -1,10 +1,9 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
 import { View, StyleSheet } from 'react-native';
-import { Card, Text, useTheme, Avatar, IconButton } from 'react-native-paper';
+import { Card, Text, useTheme, Avatar } from 'react-native-paper';
 
 const InsuranceCoverage = () => {
-  const theme = useTheme();
 
   return (
     <View>
@@ -51,6 +50,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
         width: 300,
+        marginVertical: 5
       },
       policyRow: {
         flexDirection: 'row',
