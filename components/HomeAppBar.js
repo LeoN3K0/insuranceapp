@@ -26,7 +26,7 @@ const HomeAppBar = () => {
             <Card.Content>
               <View style={styles.cardContainerDate}>
                 <Text style={{  marginRight: 40 }}>Today, 05:00 a.m</Text>
-                <Badge style={{ backgroundColor: 'gold', marginRight: -20, }} size={25}>5</Badge>
+                <Badge style={{ backgroundColor: 'gold', marginRight: -5, }} size={25}>5</Badge>
               </View>  
               <View style={styles.cardContainerLocal}>
                 <View style={styles.cardContainerDate}>

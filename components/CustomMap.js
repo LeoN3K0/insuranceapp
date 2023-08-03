@@ -5,7 +5,7 @@ import { useTheme } from 'react-native-paper';
 
 const CustomMap = ({ locationA, locationB }) => {
   const theme = useTheme();
-  const apiKey = '4da78d843d294c938fce0e9cd6a66ef0';
+  const apiKey = 'Your key';
 
   const [routeCoordinates, setRouteCoordinates] = useState([]);
 

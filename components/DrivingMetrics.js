@@ -21,10 +21,10 @@ const DrivingMetrics = () => {
                                 <Text>Speed</Text>
                                 <Text>Excellent</Text>
                             </View>
-                            <View style={{marginLeft: 175, alignItems: 'flex-end'}}>
+                            <View style={{marginLeft: 150, alignItems: 'flex-end'}}>
                                 <Text>10/10</Text>
                                 <View style={{flexDirection: 'row'}}>
-                                <Text><Avatar.Icon style={{backgroundColor: 'transparent'}} color='black' icon='trending-up' size={20}/></Text><Text>+2</Text>
+                                <Text><Avatar.Icon style={{backgroundColor: 'transparent'}} color={theme.colors.onSurface} icon='trending-up' size={20}/></Text><Text>+2</Text>
                                 </View>                                
                             </View>
                         </View>

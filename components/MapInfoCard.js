@@ -34,7 +34,7 @@ const InfoCard = ({ duration, distance, addressA, addressB }) => {
             <Text>{addressA}</Text>
             </View>
             <View style={{flexDirection: 'column', justifyContent: 'space-evenly', alignContent: 'flex-start',}}>
-            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 4, marginVertical: 2.5, }} size={3}/>
             <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
             <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
             <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>

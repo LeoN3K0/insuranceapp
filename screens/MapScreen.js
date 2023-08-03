@@ -9,7 +9,7 @@ const MapScreen = () => {
   const [locationB, setLocationB] = useState(null);
   const addressA = '118 W Arroyo Ave, Pueblo CO';
   const addressB = '1650 Telstar Dr, Colorado Springs CO';
-  const apiKey = '9f34f6f885e34c08b28a01ceda345ba9';
+  const apiKey = 'your key';
 
   useEffect(() => {
     const addressA = '118 W Arroyo Ave, Pueblo CO';
