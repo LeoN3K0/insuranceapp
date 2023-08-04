@@ -9,38 +9,38 @@ const HomeAppBar = () => {
 
   return (
     <View>
-      <Appbar.Header style={[styles.header, { backgroundColor: theme.colors.primaryContainer }]}>
+      <Appbar.Header style={[styles.header, { backgroundColor: theme.colors.primary }]}>
 
         <View style={styles.containerTitle}>
-          <Appbar.Content title="Hi, John!" />
-          <Appbar.Action icon="bell"/>
+          <Appbar.Content title="Hi, John!" color={theme.colors.onPrimary}  />
+          <Appbar.Action icon="bell" color={theme.colors.onPrimary}/>
           <Badge size={6}  style={{ position: 'absolute', top: 15, right: 28 }} />
         </View>
 
         <View style={styles.containerSub}>
-          <Text>Recent Trips</Text>
+          <Text style={{color: theme.colors.onPrimary}}>Recent Trips</Text>
         </View>
 
         <ScrollView horizontal contentContainerStyle={styles.scrollViewContent}>
           <Card style={styles.card} onPress={() => navigation.navigate('Map')}>
             <Card.Content>
               <View style={styles.cardContainerDate}>
-                <Text style={{  marginRight: 40 }}>Today, 05:00 a.m</Text>
-                <Badge style={{ backgroundColor: 'gold', marginRight: -5, }} size={25}>5</Badge>
+                <Text style={{ color: theme.colors.secondary, marginRight: 40 }}>Today, 05:00 a.m</Text>
+                <Badge style={{ backgroundColor: '#feba52', marginRight: -5, }} size={25}>5</Badge>
               </View>  
               <View style={styles.cardContainerLocal}>
                 <View style={styles.cardContainerDate}>
-                  <Badge style={{ backgroundColor: theme.colors.secondary, marginRight: 10, marginVertical: 2.5, }} size={10}/>
+                  <Badge style={{ backgroundColor: theme.colors.primary, marginRight: 10, marginVertical: 2.5, }} size={10}/>
                   <Text>118 W Arroyo Ave, Pueblo CO</Text>
                 </View>
                 <View style={styles.dots}>
-                <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2, }} size={3}/>
-                <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2, }} size={3}/>
-                <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2, }} size={3}/>
-                <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2, }} size={3}/>
+                <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 2, marginVertical: 2, }} size={3}/>
+                <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 2, marginVertical: 2, }} size={3}/>
+                <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 2, marginVertical: 2, }} size={3}/>
+                <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 2, marginVertical: 2, }} size={3}/>
                 </View>
                 <View style={styles.cardContainerDate}>
-                  <Badge style={{ backgroundColor: theme.colors.secondary, marginRight: 10, marginVertical: 2.5, }} size={10}/>
+                  <Badge style={{ backgroundColor: theme.colors.primary, marginRight: 10, marginVertical: 2.5, }} size={10}/>
                   <Text>1650 Telstar DR, Colorado Springs CO</Text>
                 </View>
               </View>            
@@ -77,24 +77,25 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   containerTitle: {
-    flex: 1,
+    flex: 2,
     width: '100%',
     padding: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: 10,
   },
   containerSub: {
-    flex: 1,
+    flex: 2,
     width: '100%',
-    padding: 10,
+    paddingHorizontal: 10,
   },
   scrollViewContent: {
     flexDirection: 'row', 
   },
   card: {
     marginHorizontal: 8,
-    marginBottom: 10,
+    marginVertical: 10,
     borderRadius: 30,
     justifyContent: 'flex-start',
     alignItems: 'flex-start',

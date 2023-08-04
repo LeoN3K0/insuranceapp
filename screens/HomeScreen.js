@@ -10,7 +10,7 @@ function HomeScreen() {
   const theme = useTheme();
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.colors.background }]}>
+    <View style={[styles.container, { backgroundColor: theme.colors.customContainer }]}>
       <ScrollView vertical>
         <HomeAppbar/>
         <ActivePolicies/>

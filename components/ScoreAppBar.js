@@ -8,12 +8,12 @@ const ScoreAppBar = () => {
 
   return (
     <View>
-      <Appbar.Header style={[styles.header, { backgroundColor: theme.colors.primaryContainer }]}>
-        <Text style={{marginTop: 10}}>Your average driving score</Text>
+      <Appbar.Header style={[styles.header, { backgroundColor: theme.colors.primary }]}>
+        <Appbar.Content style={{marginTop: 10}} title='Your average driving score' color={theme.colors.onPrimary}/>
         <AnimatedCircularProgress
           size={360}
           style={{height: 190}}
-          width={10}
+          width={15}
           arcSweepAngle={179}
           rotation={-90}
           fill={70}
@@ -26,17 +26,17 @@ const ScoreAppBar = () => {
             {
               type = () =>(
                 <View style={{marginBottom: 150}}>
-                  <Text style={{alignSelf: 'center'}} >Good</Text>
-                  <Text style={{alignSelf: 'center', fontSize: 75}}>7</Text>
+                  <Text style={{alignSelf: 'center', color: theme.colors.onPrimary}} >Good</Text>
+                  <Text style={{alignSelf: 'center', fontSize: 75, color: theme.colors.onPrimary}}>7</Text>
                 </View>
               )
               
             }
           </AnimatedCircularProgress> 
-          <View style={{bottom: 5, flexDirection: 'row'}}>
-            <View style={{right: 55}}><Text>0</Text></View>
-            <View style={{flexDirection: 'row'}}><Text style={{bottom: 5}}><Avatar.Icon color='green' icon='trending-up' size={30} style={{backgroundColor: 'transparent'}} /></Text><Text> 2 points better than last week</Text></View>
-            <View style={{left: 60}}><Text>10</Text></View>
+          <View style={{bottom: 5, flexDirection: 'row', marginTop: 10}}>
+            <View style={{right: 40}}><Text style={{color: theme.colors.onPrimary}}>0</Text></View>
+            <View style={{flexDirection: 'row'}}><Text style={{bottom: 5}}><Avatar.Icon color={theme.colors.onPrimary} icon='trending-up' size={30} style={{backgroundColor: 'transparent'}} /></Text><Text style={{color: theme.colors.onPrimary}}> 2 points better than last week</Text></View>
+            <View style={{left: 45}}><Text style={{color: theme.colors.onPrimary}}>10</Text></View>
           </View>    
       </Appbar.Header>
     </View>

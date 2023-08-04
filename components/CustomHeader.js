@@ -11,6 +11,7 @@ const CustomHeader = ({ navigation, title }) => {
           icon="arrow-left"
           mode="contained"
           containerColor={theme.colors.surface}
+          iconColor={theme.colors.primary}
           size={24}
           onPress={() => navigation.goBack()}
         />

@@ -11,7 +11,7 @@ const InfoCard = ({ duration, distance, addressA, addressB }) => {
   };
 
   return (
-    <Card style={styles.card} onPress={toggleCardSize}>
+    <Card style={[styles.card, {backgroundColor: theme.colors.surface}]} onPress={toggleCardSize}>
       <View style={styles.grayBar} />
       <View style={styles.contentContainer}>
         {isBigCard ? (
@@ -20,27 +20,27 @@ const InfoCard = ({ duration, distance, addressA, addressB }) => {
             <View style={{flex: 1}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Text style={styles.duration}>{duration}</Text>
-            <Text style={styles.distance}>{distance}</Text>
+            <Text style={[styles.distance, {color: theme.colors.secondary}]}>{distance}</Text>
             </View>
-            <Text>Today, 05:00 a.m</Text>
+            <Text style={{color: theme.colors.secondary}}>Today, 05:00 a.m</Text>
             </View>
-            <Badge style={[styles.badge, { backgroundColor: 'gold', alignSelf: 'center' }]} size={30}>5</Badge>
+            <Badge style={[styles.badge, { backgroundColor: '#feba52', alignSelf: 'center' }]} size={30}>5</Badge>
             </View>
-            <Card style={[styles.adressCard, {backgroundColor: theme.colors.background,}]}>
+            <Card style={[styles.adressCard, {backgroundColor: theme.colors.customContainer,}]}>
             <Card.Content>
             <View style={styles.addressContainer}>
             <View style={styles.cardContainer}>
-            <Avatar.Icon icon={'circle'} style={{ backgroundColor: theme.colors.secondary, marginRight: 10, marginVertical: 5}} size={15}/>
+            <Avatar.Icon icon={'circle'} style={{ backgroundColor: theme.colors.primary, marginRight: 10, marginVertical: 5}} size={15}/>
             <Text>{addressA}</Text>
             </View>
             <View style={{flexDirection: 'column', justifyContent: 'space-evenly', alignContent: 'flex-start',}}>
-            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 4, marginVertical: 2.5, }} size={3}/>
-            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
-            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
-            <Badge style={{ backgroundColor: theme.colors.secondary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 4, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
+            <Badge style={{ backgroundColor: theme.colors.primary, marginLeft: 2, marginVertical: 2.5, }} size={3}/>
             </View>
             <View style={styles.cardContainer}>
-            <Avatar.Icon icon={'circle'} style={{ backgroundColor: theme.colors.secondary, marginRight: 10, marginVertical: 5 }} size={15}/>
+            <Avatar.Icon icon={'circle'} style={{ backgroundColor: theme.colors.primary, marginRight: 10, marginVertical: 5 }} size={15}/>
             <Text>{addressB}</Text>
             </View>
             </View>
@@ -53,10 +53,10 @@ const InfoCard = ({ duration, distance, addressA, addressB }) => {
             <View style={{flex: 1}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Text style={styles.duration}>{duration}</Text>
-            <Text style={styles.distance}>{distance}</Text>
+            <Text style={[styles.distance, {color: theme.colors.secondary}]}>{distance}</Text>
             </View>                     
             </View>
-            <Badge style={[styles.badge, { backgroundColor: 'gold', alignSelf: 'center' }]} size={30}>5</Badge>
+            <Badge style={[styles.badge, { backgroundColor: '#feba52', alignSelf: 'center' }]} size={30}>5</Badge>
             </View>
           </>
         )}

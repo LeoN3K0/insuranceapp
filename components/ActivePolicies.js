@@ -4,13 +4,14 @@ import { View, StyleSheet } from 'react-native';
 import { Card, Text, useTheme, Avatar, IconButton } from 'react-native-paper';
 
 const ActivePolicies = () => {
+    const theme = useTheme();
 
   return (
     <View>
         <View style={styles.main}>
             <View style={styles.containerPolicy}>
                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>Active Policies</Text>
-                <Text>View All</Text>
+                <Text style={{color: theme.colors.primary}}>View All</Text>
             </View>
             <ScrollView horizontal contentContainerStyle={styles.scrollViewContainer}>
                 <Card style={styles.policyCard}>

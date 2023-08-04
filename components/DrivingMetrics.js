@@ -19,12 +19,14 @@ const DrivingMetrics = () => {
                             <Avatar.Icon style={{marginRight: 20, marginTop: 5}} icon='speedometer' size={35} />
                             <View style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 5, marginRight: 50 }}>
                                 <Text>Speed</Text>
-                                <Text>Excellent</Text>
+                                <Text style={{color: 'green'}}>Excellent</Text>
                             </View>
                             <View style={{marginLeft: 150, alignItems: 'flex-end'}}>
-                                <Text>10/10</Text>
                                 <View style={{flexDirection: 'row'}}>
-                                <Text><Avatar.Icon style={{backgroundColor: 'transparent'}} color={theme.colors.onSurface} icon='trending-up' size={20}/></Text><Text>+2</Text>
+                                <Text>10</Text><Text style={{color: theme.colors.secondary}}>/10</Text>
+                                </View>
+                                <View style={{flexDirection: 'row'}}>
+                                <Text><Avatar.Icon style={{backgroundColor: 'transparent'}} color='green' icon='trending-up' size={20}/></Text><Text style={{color: 'green'}}>+2</Text>
                                 </View>                                
                             </View>
                         </View>
@@ -41,10 +43,12 @@ const DrivingMetrics = () => {
                             <Avatar.Icon style={{marginRight: 20, marginTop: 5}} icon='alert-octagon' size={35} />
                             <View style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 5, marginRight: 50 }}>
                                 <Text>Braking</Text>
-                                <Text>Good</Text>
+                                <Text style={{color: 'green'}}>Good</Text>
                             </View>
                             <View style={{marginLeft: 175, alignItems: 'flex-end'}}>
-                                <Text>8/10</Text>
+                            <View style={{flexDirection: 'row'}}>
+                                <Text>8</Text><Text style={{color: theme.colors.secondary}}>/10</Text>
+                                </View>
                                 <View style={{flexDirection: 'row'}}>
                                 </View>                                
                             </View>
