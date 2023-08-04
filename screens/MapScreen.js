@@ -3,13 +3,14 @@ import { View } from 'react-native';
 import CustomMap from '../components/CustomMap';
 import MapInfoCard from '../components/MapInfoCard';
 import { Text } from 'react-native-paper';
+import { GEOCODING_KEY } from  '@env';
 
 const MapScreen = () => {
   const [locationA, setLocationA] = useState(null);
   const [locationB, setLocationB] = useState(null);
   const addressA = '118 W Arroyo Ave, Pueblo CO';
   const addressB = '1650 Telstar Dr, Colorado Springs CO';
-  const apiKey = 'your key';
+  const apiKey = GEOCODING_KEY;
 
   useEffect(() => {
     const addressA = '118 W Arroyo Ave, Pueblo CO';

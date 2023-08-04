@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import MapView, { Marker, Polyline } from 'react-native-maps';
 import { View, StyleSheet, Text } from 'react-native';
 import { useTheme } from 'react-native-paper';
+import { DIRECTIONS_KEY } from  '@env';
 
 const CustomMap = ({ locationA, locationB }) => {
   const theme = useTheme();
-  const apiKey = 'Your key';
+  const apiKey = DIRECTIONS_KEY;
 
   const [routeCoordinates, setRouteCoordinates] = useState([]);
 
